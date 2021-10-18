@@ -1,0 +1,195 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contacto</title>
+</head>
+<style>
+    body {
+        background: url(imagenes/fondo2.png) no-repeat;
+        background-size: cover;
+        overflow: auto;
+        height: 100vh;
+        color: white;
+    }
+
+    button {
+        padding: 10px 25px;
+        background-color: rgb(0, 121, 177);
+        color: white;
+        position: relative;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <h1 align="center">
+        CONTACTO
+    </h1>
+    <form name="formulario" action="mailto:destinoservidor.com?subject=prueba" method="post"
+        enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos generales</legend>
+            <table width="740" border="0" cellpadding="5">
+                <tr>
+                    <td align="right" width="164">
+                        Teclee su <u>n</u>ombre:
+                    </td>
+                    <td colspan="3">
+                        <input type="text" name="nombre_usuario" size="20" maxlength="50" tabindex="1" accesskey="n">
+                    </td>
+                    <td width="122" align="right">
+                        Teclee su celular:
+                    </td>
+                    <td width="77" align="right">
+                        <input type="password" name="clave" size="10" maxlength="25" tabindex="2" accesskey="c">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" width="164">
+                        <u>O</u>pine sobre mi p&aacute;gina:
+                    </td>
+                    <td rowspan="2" colspan="2">
+                        <textarea name="opinion" cols="30" rows="5" wrap="virtual" tabindex="3" accesskey="o">
+                        </textarea>
+                    </td>
+                    <td rowspan="2" colspan="2">&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="164">&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" width="164">
+                        <u>M</u>ayor de edad:
+                    </td>
+                    <td width="80">
+                        <input type="checkbox" name="adulto" value="si" checked tabindex="4" accesskey="m">
+                    </td>
+                    <td width="101" align="right">
+                        <u>S</u>exo: Masculino
+                    </td>
+                    <td width="115">
+                        <input type="radio" name="sexo" value="m" checked tabindex="5" accesskey="s">
+                    </td>
+                    <td width="122" align="right">
+                        <u>I</u>ngresos:10000 &euro;
+                    </td>
+                    <td width="77">
+                        <input type="radio" name="sueldo" value="10" checked tabindex="7" accesskey="i">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="164">&nbsp;
+
+                    </td>
+                    <td width="80">&nbsp;
+
+                    </td>
+                    <td width="101" align="right">
+                        Femenino
+                    </td>
+                    <td width="77">
+                        <input type="radio" name="sexo" value="f" tabindex="6">
+                    </td>
+                    <td width="122" align="right">
+                        10000-20000&euro;
+                    </td>
+                    <td width="77">
+                        <input type="radio" name="sueldo" value="1020" tabindex="8">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="164">
+                        &nbsp;
+                    </td>
+                    <td colspan="3">
+                        &nbsp;
+                    </td>
+                    <td width="122" align="right">
+                        mas de 20000&euro;
+                    </td>
+                    <td width="77">
+                        <input type="radio" name="sueldo" value="20" tabindex="9">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right" height="7" width="164">
+                        Imagen del error:
+                    </td>
+                    <td height="7" colspan="3">
+                        <input type="file" name="archivo" size="30" maxlength="1000" tabindex="10" accesskey="f">
+                    </td>
+                    <td colspan="2" height="7">
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Otros datos</legend>
+            <table width="740" border="0" cellpadding="5">
+                <tr>
+                    <td align="right" rowspan="2" valign="top" width="164">
+                        Indique su <u>p</u>rovincia:
+                    </td>
+                    <td width="80" rowspan="2" valign="top">
+                        <select name="provincia" tabindex="11" accesskey="p">
+                            <option value="1">Puebla</option>
+                            <option value="2">Tlaxcala</option>
+                            <option value="3">Oaxaca</option>
+                            <option value="4">Veracruz</option>
+                            <option value="5">Otras</option>
+                        </select>
+                    </td>
+                    <td align="right" width="101">
+                        <u>C</u>alificaci&oacute;n
+                    </td>
+                    <td width="101" rowspan="2">
+                        <select name="calif" size="3" tabindex="12" accesskey="h">
+                            <option value="1">Muy Excelente</option>
+                            <option value="2">Excelente</option>
+                            <option value="3">Media</option>
+                            <option value="4">Mala</option>
+                            <option value="5">Muy mala</option>
+                        </select>
+                    </td>
+                    <td colspan="2" rowspan="2">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="101">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="submit" name="mandar" value="Enviar" tabindex="13">
+                    </td>
+                    <td colspan="2">
+                        <input type="reset" name="borrado" value="Borrar" tabindex="14">
+                    </td>
+                </tr>
+            </table>
+            <input type="hidden" name="escondido" value="oculto">
+        </fieldset>
+    </form>
+    <br>
+    <div align="right">
+        <a class="cta" href="index.html"><button>Regresar a Inicio</button></a>
+    </div>
+</body>
+
+</html>

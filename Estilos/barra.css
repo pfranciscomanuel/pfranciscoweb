@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*background-color: #14205a;
+background-color: #065a69;
+background-color: #14205a;*/
+body {
+  background: url(../imagenes/fondo2.png) no-repeat;
+  background-size: cover;
+  overflow: auto;
+  height: 100vh;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.opcion,
+.active,
+button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+li,
+a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav {
+  width: 85%;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .menu .opcion {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  margin: 25px;
+  position: relative;
+  vertical-align: middle;
+}
+
+nav .menu .opcion .active {
+  color: white;
+}
+
+nav .menu .opcion::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #964b9c;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  transition: 0.4s ease-out;
+}
+
+nav .menu .opcion:hover::before {
+  width: 100%;
+}
+
+nav .menu .opcion .active:hover {
+  color: #964b9c;
+}
+
+nav .submenu li a::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: rgba(224, 78, 41, 0.8);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  transition: 0.4s ease-out;
+}
+
+nav .submenu li a:hover::before {
+  width: 100%;
+}
+
+nav .submenu li a:hover {
+  color: rgba(224, 78, 41, 0.8);
+}
+
+.submenu li a {
+  color: #ffffff;
+}
+
+.menu .submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  color: rgba(224, 78, 41, 0.8);
+}
+
+.menu .submenu li {
+  display: none;
+  position: relative;
+  list-style: none;
+  top: 25px;
+  padding: 5% 12%;
+}
+
+nav .menu li:hover .submenu > li {
+  display: block;
+  flex-direction: column;
+  top: 10px;
+}
+
+button {
+  padding: 7px 20px;
+  background-color: rgb(189, 69, 53);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(224, 78, 41, 0.8);
+}
